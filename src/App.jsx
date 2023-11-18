@@ -1,3 +1,5 @@
+import EnterPermission from './components/EnterPermission'
+
 import { useState } from 'react'
 import './App.css'
 
@@ -13,8 +15,8 @@ export default function App() {
           count is {count}
         </button>
       </div>
+      <EnterPermission counter={count}></EnterPermission>
     </>
   )
 }
-
 

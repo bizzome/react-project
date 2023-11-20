@@ -9,12 +9,17 @@ export default function App() {
   return (
     <>
       <h1>Welcome to <a href="https://bizzome.github.io">@BIZZOME</a> world!!</h1>
-      <p>Do you know how to count to five?</p>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div id='challenge-wrap'>
+        <div><p>Do you know how to count to five?</p></div>
+        
+        <div className="card">
+          <button onClick={() => setCount((count) => count + 1)}>
+            count is {count}
+          </button>
+        </div>
       </div>
+      <p>Try to guess what will be my next calculation result.</p>
+      
       <EnterPermission counter={count}></EnterPermission>
     </>
   )

@@ -1,4 +1,5 @@
 import EnterPermission from './components/EnterPermission'
+import OtherCounter from './components/OtherCounter'
 
 import { useState } from 'react'
 import './App.css'
@@ -19,6 +20,7 @@ export default function App() {
         </div>
       </div>
       <p>Try to guess what will be my next calculation result.</p>
+      <OtherCounter counter={count}></OtherCounter>
       
       <EnterPermission counter={count}></EnterPermission>
     </>

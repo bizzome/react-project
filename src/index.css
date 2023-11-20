@@ -21,22 +21,18 @@
 .challenge-block {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-button.card {
-  margin: 0% 10% 0% 5%;
-}
-
-p.card {
-  margin: 0;
+span.card {
+  padding: 0 10%;
   border-radius: 8px;
   border: 1px solid transparent;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
-  cursor: pointer;
   transition: border-color 0.25s;
 }
 
